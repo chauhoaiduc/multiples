@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Multiple of 7 and 13</title>
+</head>
+<body>
+<h1>Exercises 1:</h1>
+<h2>
+    Write a Javascript function to print out the console the integer numbers from 30 to 300 , but if that number that is multiples of 7 then print out 'abc', if that number is multiples of 13 then print out 'xyz'. For those numbers those are multiple of both 7 and 13 then print out 'a-z' . After that push your code into github and paste the link to view code here
+</h2>
+<script>
+    function isMultiple(a,b){
+        return a%b==0
+    }
+
+    for(i = 30 ; i <= 300 ; i++){
+        if(isMultiple(i,7) && isMultiple(i,13)){
+            console.log('a-z');
+        }else if(isMultiple(i,7)){
+            console.log('abc');
+        }else if(isMultiple(i,13)){
+            console.log('xyz');
+        }else{
+            console.log(i);
+        }
+    }
+</script>
+</body>
+</html>
